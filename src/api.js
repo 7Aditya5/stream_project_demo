@@ -1,5 +1,5 @@
-
-const apiKey = '6ee9a062207442c1b1a145519230507';
+import api_key from "./secret";
+const apiKey = api_key;
 console.log(apiKey);
 
 export const fetchWeatherData = async (city) => {
