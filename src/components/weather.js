@@ -15,15 +15,6 @@ const Weather = () => {
     setWeatherData(data);
   };
 
-  useEffect(() => {
-    // Fetch weather data for a default city when the component mounts
-    const defaultCity = 'London';
-    fetchWeatherData(defaultCity).then((data) => {
-      console.log(data);
-      setWeatherData(data);
-    });
-  }, []);
-
   return (
     <div>
       <form onSubmit={handleFormSubmit}>
