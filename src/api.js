@@ -1,6 +1,6 @@
 import api_key from "./secret";
 const apiKey = api_key;
-console.log(apiKey);
+
 
 export const fetchWeatherData = async (city) => {
   const apiUrl = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}`;
